@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { craftsmanship } from '../imageAssets';
 
 export default function JewelleryExperience() {
   return (
@@ -44,7 +45,7 @@ export default function JewelleryExperience() {
           <div className="lg:col-span-6">
             <div className="relative aspect-[4/5] bg-[#0a0a0a] border border-white/[0.02] overflow-hidden group">
               <img
-                src="/src/assets/images/craftsmanship.webp"
+                src={craftsmanship}
                 alt="Artisan engraving traditional Sri Lankan jewelry gold filigree detailed carving"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover filter brightness-[0.5] contrast-[1.1] transition-transform duration-[3000ms] ease-[0.16, 1, 0.3, 1] group-hover:scale-105"

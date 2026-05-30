@@ -18,6 +18,7 @@ import {
   ChevronRight,
   TrendingUp
 } from 'lucide-react';
+import { bridal, craftsmanship, gemstone, hero, jawrahLogo, logo, ring, showroom, watermark, weddingBands } from './imageAssets';
 
 // Subcomponents
 import Navbar from './components/Navbar';
@@ -63,13 +64,13 @@ export default function App() {
 
   // Generated authentic premium asset paths we created
   const imagePaths = {
-    hero: "/src/assets/images/hero.webp",
-    bridal: "/src/assets/images/bridal.webp",
-    ring: "/src/assets/images/ring.webp",
-    showroom: "/src/assets/images/showroom.webp",
-    craftsmanship: "/src/assets/images/craftsmanship.webp",
-    logo: "/src/assets/images/logo.webp",
-    watermark: "/src/assets/images/watermark.webp"
+    hero: hero,
+    bridal: bridal,
+    ring: ring,
+    showroom: showroom,
+    craftsmanship: craftsmanship,
+    logo: logo,
+    watermark: watermark
   };
 
   useEffect(() => {
@@ -123,7 +124,7 @@ export default function App() {
   const instagramImages = [
     {
       id: 1,
-      image: "/src/assets/images/wedding_bands.webp",
+      image: weddingBands,
       title: "Royal Kandyan Choker details",
       likes: "1,240 likes"
     },
@@ -147,7 +148,7 @@ export default function App() {
     },
     {
       id: 5,
-      image: "/src/assets/images/gemstone.webp",
+      image: gemstone,
       title: "Celestial Sapphire Diamond Drop Earrings",
       likes: "2,019 likes"
     },
@@ -489,7 +490,7 @@ export default function App() {
                 
                 <div className="flex items-center gap-3">
                   <img 
-                    src="/src/assets/images/jawrah-logo.svg" 
+                    src={jawrahLogo}
                     alt="Jawrah Pixel Logo" 
                     className="h-[20px] md:h-[24px] w-auto object-contain opacity-100 group-hover:drop-shadow-[0_0_8px_rgba(212,175,55,0.3)] transition-all duration-300"
                     onError={(e) => { e.currentTarget.style.display = 'none'; }}

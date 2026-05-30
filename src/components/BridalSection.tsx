@@ -1,11 +1,12 @@
 import { motion } from 'motion/react';
+import { bridal } from '../imageAssets';
 
 interface BridalSectionProps {
   onBookClick: () => void;
 }
 
 export default function BridalSection({ onBookClick }: BridalSectionProps) {
-  const bridalImage = "/src/assets/images/bridal.webp";
+  const bridalImage = bridal;
 
   return (
     <section id="bridal-experience" className="py-24 sm:py-48 lg:py-64 bg-[#030303] text-white relative overflow-hidden border-b border-white/[0.03]">

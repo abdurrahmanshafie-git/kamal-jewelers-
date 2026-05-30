@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Clock, MapPin, Sparkles, Heart } from 'lucide-react';
 import PageHeader from './PageHeader';
+import { bridal, craftsmanship, hero, ring, showroom } from '../imageAssets';
 
 interface AboutPageProps {
   onBookClick: () => void;
@@ -9,11 +10,11 @@ interface AboutPageProps {
 
 export default function AboutPage({ onBookClick, onNavigate }: AboutPageProps) {
   const imagePaths = {
-    hero: "/src/assets/images/hero.webp",
-    bridal: "/src/assets/images/bridal.webp",
-    ring: "/src/assets/images/ring.webp",
-    showroom: "/src/assets/images/showroom.webp",
-    craftsmanship: "/src/assets/images/craftsmanship.webp"
+    hero: hero,
+    bridal: bridal,
+    ring: ring,
+    showroom: showroom,
+    craftsmanship: craftsmanship
   };
 
   const timelineChapters = [

@@ -1,12 +1,13 @@
 import { motion } from 'motion/react';
 import { MapPin, Clock, ArrowRight } from 'lucide-react';
+import { showroom } from '../imageAssets';
 
 interface ShowroomHomeSectionProps {
   onNavigate: () => void;
 }
 
 export default function ShowroomHomeSection({ onNavigate }: ShowroomHomeSectionProps) {
-  const showroomImage = "/src/assets/images/showroom.webp";
+  const showroomImage = showroom;
 
   return (
     <section id="showroom-home" className="py-24 sm:py-48 bg-[#030303] text-white relative overflow-hidden border-b border-white/[0.03]">

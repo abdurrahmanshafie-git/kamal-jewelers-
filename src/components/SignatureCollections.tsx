@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { bridal, gemstone, hero, ring, weddingBands } from '../imageAssets';
 
 interface SignatureCollectionsProps {
   onCollectionSelect: (id: string) => void;
@@ -6,11 +7,11 @@ interface SignatureCollectionsProps {
 
 export default function SignatureCollections({ onCollectionSelect }: SignatureCollectionsProps) {
   const imagePaths = {
-    bridal: "/src/assets/images/bridal.webp",
-    ring: "/src/assets/images/ring.webp",
-    gold: "/src/assets/images/hero.webp",
-    gemstone: "/src/assets/images/gemstone.webp",
-    wedding: "/src/assets/images/wedding_bands.webp"
+    bridal: bridal,
+    ring: ring,
+    gold: hero,
+    gemstone: gemstone,
+    wedding: weddingBands
   };
 
   const collections = [

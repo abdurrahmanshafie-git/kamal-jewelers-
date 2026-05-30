@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowUpRight, Sparkles, Star, Anchor } from 'lucide-react';
 import PageHeader from './PageHeader';
+import { bridal, craftsmanship, gemstone, hero, ring, weddingBands } from '../imageAssets';
 
 interface CollectionsPageProps {
   onNavigate: (page: string) => void;
@@ -17,7 +18,7 @@ export default function CollectionsPage({ onNavigate, onBookClick, onCollectionS
       subTitle: "THE AUSPICIOUS ASSEMBLAGES",
       tagline: "Architectural 22k gold ensembles designed to structure centuries of familial history on the sacred day.",
       description: "Under the supervision of regional artisans in our Akurana workshop, bridal sets are forged as continuous structural statements. Each of the traditional Kandyan seven layers is calculated to carry exact symbolic weight, balancing the legacy of generations with absolute physical grace.",
-      image: "/src/assets/images/bridal.webp",
+      image: bridal,
       layout: "full-width",
       citation: "NK ATELIER &bull; SRI LANKA TRADITIONAL"
     },
@@ -28,7 +29,7 @@ export default function CollectionsPage({ onNavigate, onBookClick, onCollectionS
       subTitle: "THE PURE 916 FILIGREE",
       tagline: "Delicate gold wirework shaped entirely by memory inside our regional Akurana workshop.",
       description: "Made without digital printers or machine molds. The gold is purified, drawn into filaments thinner than silk, and hand-coiled into intricate historical patterns. It is an art form driven entirely by memory, coordination, and patience, preserving a forty-five-year-old local standard.",
-      image: "/src/assets/images/hero.webp",
+      image: hero,
       layout: "split-left",
       citation: "ASSAY OFFICE CERTIFIED &bull; 22 CARAT"
     },
@@ -39,7 +40,7 @@ export default function CollectionsPage({ onNavigate, onBookClick, onCollectionS
       subTitle: "REFRACTIVE ABSOLUTES",
       tagline: "Internationally certified stones selected for celestial fire, hand-set into raw platinum grids.",
       description: "We collect only GIA-certified brilliants of exceptional clarity. Mounted in low-profile, custom-sculpted white gold or raw platinum claw arrangements, each diamond is aligned to capture maximum light return, turning mathematical cut perfection into human fire.",
-      image: "/src/assets/images/ring.webp",
+      image: ring,
       layout: "split-right",
       citation: "ANTWERP ORIGINAL &bull; GIA REGISTERED"
     },
@@ -50,7 +51,7 @@ export default function CollectionsPage({ onNavigate, onBookClick, onCollectionS
       subTitle: "DEPHTS OF SEVERE SATURATION",
       tagline: "Sovereign royal-blue padparadscha and cornflower sapphires unearthed directly from local valleys.",
       description: "Directly sourced from the volcanic gravels of Ratnapura. We isolate natural sapphires representing the absolute peak of color depth—cornflower blues, deep royals, and peach padparadschas—keeping them raw and unheated to retain geological authenticity.",
-      image: "/src/assets/images/gemstone.webp", // high-end sapphire gemstone visual
+      image: gemstone, // high-end sapphire gemstone visual
       layout: "full-width",
       citation: "CEYLON GEOLOGICAL INC &bull; UNHEATED ORIGINAL"
     },
@@ -61,7 +62,7 @@ export default function CollectionsPage({ onNavigate, onBookClick, onCollectionS
       subTitle: "SOUNDLESS COMMITMENTS",
       tagline: "Undecorated bands crafted from continuous, single-pour platinum and gold compounds.",
       description: "A ring holds no beginning and no termination. Crafted inside a quiet, isolated chamber of the forge, each band represents a single, uninterrupted pour of liquid metal. Symmetrical, balanced, and perfectly weighted for day-to-day carrying.",
-      image: "/src/assets/images/wedding_bands.webp",
+      image: weddingBands,
       layout: "split-left",
       citation: "UNBROKEN MOLD &bull; INDIVIDUAL CUSTOM FIT"
     },
@@ -72,7 +73,7 @@ export default function CollectionsPage({ onNavigate, onBookClick, onCollectionS
       subTitle: "INDIVIDUAL ARCHITECTURAL BLUEPRINTS",
       tagline: "Collaborate directly with design goldsmiths to formulate unique physical legacies.",
       description: "We open our archives to you. By combining the interactive weight customizer with face-to-face designer meetings, we draft individual templates. There are no duplicates; your item exists exactly once across history, carrying only your family's personal coordinates.",
-      image: "/src/assets/images/craftsmanship.webp",
+      image: craftsmanship,
       layout: "split-right",
       citation: "BESPOKE COMMISSION &bull; AKURANA WORKSHOP"
     }

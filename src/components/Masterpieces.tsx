@@ -2,6 +2,7 @@ import { useState, MouseEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Eye, X, Heart } from 'lucide-react';
 import { CollectionItem, MasterpieceItem } from '../types';
+import { bridal, craftsmanship, gemstone, goldSmelt, hero, ring, showroom, weddingBands } from '../imageAssets';
 
 interface MasterpiecesProps {
   onBookClick: () => void;
@@ -16,11 +17,11 @@ export default function Masterpieces({ onBookClick, onCollectionClick, onProduct
   const [lovedProducts, setLovedProducts] = useState<Record<string, boolean>>({});
 
   const imagePaths = {
-    hero: "/src/assets/images/hero.webp",
-    bridal: "/src/assets/images/bridal.webp",
-    ring: "/src/assets/images/ring.webp",
-    showroom: "/src/assets/images/showroom.webp",
-    craftsmanship: "/src/assets/images/craftsmanship.webp"
+    hero: hero,
+    bridal: bridal,
+    ring: ring,
+    showroom: showroom,
+    craftsmanship: craftsmanship
   };
 
   const collections: CollectionItem[] = [
@@ -53,7 +54,7 @@ export default function Masterpieces({ onBookClick, onCollectionClick, onProduct
       title: 'Wedding Collection',
       tagline: 'The Eternal Promises',
       description: 'Splendid marriage bands, traditional wedding necklaces, and exquisite modern engagement tokens.',
-      image: '/src/assets/images/wedding_bands.webp',
+      image: weddingBands,
       count: '24 Couples Pairs'
     },
     {
@@ -81,7 +82,7 @@ export default function Masterpieces({ onBookClick, onCollectionClick, onProduct
       category: 'Exclusive',
       price: 'LKR 4,500,000',
       rating: 5.0,
-      image: '/src/assets/images/gemstone.webp',
+      image: gemstone,
       purity: 'Platinum 950 Imperial Spec',
       description: 'Centering an extraordinary royal blue cushion-cut Ceylon sapphire from the depths of Ratnapura, flanked by rare triangular white brilliant-cut diamonds inside an intricately micro-engraved absolute platinum tier.',
       specs: {
@@ -126,7 +127,7 @@ export default function Masterpieces({ onBookClick, onCollectionClick, onProduct
       category: 'Bridal',
       price: 'LKR 3,820,000',
       rating: 5.0,
-      image: '/src/assets/images/gold_smelt.webp',
+      image: goldSmelt,
       purity: '22k Gold / Certified Gem',
       description: 'An imposing raw glowing Colombian emerald, bezel-set into a heavy handcrafted traditional double loop gold structure with subtle vintage hand-beating marks.',
       specs: {

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, Phone, Calendar, Compass, Star, Award, ShieldCheck, MapPin } from 'lucide-react';
+import { logo } from '../imageAssets';
 
 interface NavbarProps {
   onBookClick: () => void;
@@ -99,7 +100,7 @@ export default function Navbar({ onBookClick, currentPage, onNavigate, onMenuTog
               className="flex items-center gap-3 sm:gap-4 group"
             >
               <img
-                src="/src/assets/images/logo.webp"
+                src={logo}
                 alt="New Kamal Jewellers"
                 className={`w-auto transition-all duration-700 ${scrolled ? 'lg:h-8 h-6' : 'lg:h-10 h-7.5'}`}
               />
@@ -189,7 +190,7 @@ export default function Navbar({ onBookClick, currentPage, onNavigate, onMenuTog
               {/* Menu Header */}
               <div className="flex justify-between items-center px-8 h-[90px] border-b border-white/[0.03]">
                 <div className="flex items-center gap-4">
-                  <img src="/src/assets/images/logo.webp" alt="Logo" className="h-7 w-auto" />
+                  <img src={logo} alt="Logo" className="h-7 w-auto" />
                   <div className="flex flex-col items-start leading-none">
                     <span className="font-serif text-[12px] font-medium tracking-[0.2em] text-white uppercase">
                       New Kamal

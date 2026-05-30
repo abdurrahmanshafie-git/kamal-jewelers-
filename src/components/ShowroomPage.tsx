@@ -21,6 +21,7 @@ import {
   Coffee,
   Bookmark
 } from 'lucide-react';
+import { bridal, craftsmanship, gemstone, showroom, showroomDisplay, showroomLounge } from '../imageAssets';
 import PageHeader from './PageHeader';
 
 interface ShowroomPageProps {
@@ -115,25 +116,25 @@ export default function ShowroomPage({ onBookClick, onNavigate }: ShowroomPagePr
   // Premium gallery images representing flagship spatial architecture
   const showroomGallery = [
     {
-      url: "/src/assets/images/showroom.webp",
+      url: showroom,
       title: "The Grand Reception & Fitting Suites",
       concept: "Polished timber tables, high-magnification gem lenses, and direct natural light channels.",
       provenance: "FITTING ROOMS"
     },
     {
-      url: "/src/assets/images/showroom_lounge.webp",
+      url: showroomLounge,
       title: "The Private Consultation Chamber",
       concept: "Secure private lounge where brides inspect the heavy traditional 22-carat gold weight.",
       provenance: "VIP SALON"
     },
     {
-      url: "/src/assets/images/showroom_lounge.webp",
+      url: showroomLounge,
       title: "The Flagship Architectural Portal",
       concept: "The premium stone-cladded street view along Kandy-Matale Highway (A9).",
       provenance: "METROPOLIS ENTRY"
     },
     {
-      url: "/src/assets/images/showroom_display.webp",
+      url: showroomDisplay,
       title: "The Royal 22k Gold Heritage Cabinets",
       concept: "Continuous hand-hammered and coiled gold wire filigree displayed under optical glass.",
       provenance: "GOLD VAULT"
@@ -144,7 +145,7 @@ export default function ShowroomPage({ onBookClick, onNavigate }: ShowroomPagePr
   const walkthroughChambers = {
     bridal: {
       id: "bridal",
-      image: "/src/assets/images/bridal.webp",
+      image: bridal,
       title: "The Queenly Bridal Parlour",
       concept: "The physical calibration of the Kandyan Seven Chains.",
       hotspots: [
@@ -168,7 +169,7 @@ export default function ShowroomPage({ onBookClick, onNavigate }: ShowroomPagePr
     },
     gold: {
       id: "gold",
-      image: "/src/assets/images/craftsmanship.webp",
+      image: craftsmanship,
       title: "The Artisanal 22k Smithy Studio",
       concept: "Point-by-point smelting and jewelry filament wire drawing.",
       hotspots: [
@@ -192,7 +193,7 @@ export default function ShowroomPage({ onBookClick, onNavigate }: ShowroomPagePr
     },
     gemstone: {
       id: "gemstone",
-      image: "/src/assets/images/gemstone.webp",
+      image: gemstone,
       title: "The secure Gemstone Vault & lounge",
       concept: "Deep-saturated unheated Ceylon mineral analysis.",
       hotspots: [
@@ -326,7 +327,7 @@ export default function ShowroomPage({ onBookClick, onNavigate }: ShowroomPagePr
           <div className="lg:col-span-6">
             <div className="relative aspect-[16/11] sm:aspect-[4/3] bg-[#0c0c0c] border border-white/[0.02] overflow-hidden group">
               <img
-                src="/src/assets/images/showroom.webp"
+                src={showroom}
                 alt="New Kamal flagship showroom premium interiors in Akurana, Sri Lanka"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover filter brightness-[0.5] contrast-[1.1] transition-transform duration-[3s] group-hover:scale-105"

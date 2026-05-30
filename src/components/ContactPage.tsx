@@ -2,6 +2,7 @@ import { useState, FormEvent } from 'react';
 import { Mail, Phone, MapPin, Sparkles, Send, Check, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import PageHeader from './PageHeader';
+import { logo } from '../imageAssets';
 
 interface ContactPageProps {
   onNavigate: (page: string) => void;
@@ -60,7 +61,7 @@ export default function ContactPage({ onNavigate }: ContactPageProps) {
             <div className="space-y-8">
               <div className="p-8 border border-white/[0.05] bg-white/[0.01] space-y-6">
                 <img
-                  src="/src/assets/images/logo.webp"
+                  src={logo}
                   alt="New Kamal Jewellers Logo"
                   className="h-12 w-auto opacity-90"
                 />

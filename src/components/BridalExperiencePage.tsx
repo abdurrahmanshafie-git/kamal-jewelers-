@@ -21,6 +21,7 @@ import {
   FileText,
   HeartHandshake
 } from 'lucide-react';
+import { bridal, bridalPortrait1, bridalPortrait2, craftsmanship, goldSmelt, hero, showroom, weddingBands } from '../imageAssets';
 import { ShowroomAppointment } from '../types';
 import PageHeader from './PageHeader';
 
@@ -59,7 +60,7 @@ export default function BridalExperiencePage({ onBookClick, onNavigate, onAppoin
       title: "The Regal Kandyan Seven-Chains",
       concept: "CAMPAIGN I &bull; THE IMPERIAL HEIRLOOM ASSEMBLAGE",
       description: "An absolute masterwork requiring over 180 continuous hours of soldering. This legendary Sri Lankan tradition requires seven nested layers of distinct gold necklaces—each honoring a stellar protection or cosmic force. Formed with certified 22-carat gold, our goldsmiths calibrate every link to respond to the dynamic weight of the sacred wedding morning.",
-      image: "/src/assets/images/bridal.webp",
+      image: bridal,
       traditionalWeight: "90 TO 150 SOVEREIGNS (720g - 1,200g)",
       customizationOptions: "Adaptable layer lengths, custom ruby or padparadscha sapphire clasp inserts, customizable thickness.",
       highlightQuote: "“To carry the traditional seven layers is to wrap the visual, unbreakable lineage of Kandy's queens around your shoulders.”",
@@ -69,7 +70,7 @@ export default function BridalExperiencePage({ onBookClick, onNavigate, onAppoin
       title: "The Celestial Diamond Constellation",
       concept: "CAMPAIGN II &bull; COLD-PLATINUM SPACE-GEOMETRY",
       description: "We reject the chaotic mass production of modern diamond settings. Our bridal collared lattices use Antwerp triple-excellent brilliants hand-mounted inside raw platinum frameworks. The settings are microscopically open on the reverse to let Ceylon sunlight pour through, ensuring magnificent fire under both temple canopies and ballroom crystal chandeliers.",
-      image: "/src/assets/images/wedding_bands.webp",
+      image: weddingBands,
       traditionalWeight: "18 to 45 TOTAL CARATS GIA CERTIFIED",
       customizationOptions: "Configurable hand-cut diamond shapes (pear, marquise, emerald), platinum 950 or 18k white gold mounting.",
       highlightQuote: "“A diamond is not mere status; it is natural crystalline mathematics speed-translating low-source light into pure color.”",
@@ -79,7 +80,7 @@ export default function BridalExperiencePage({ onBookClick, onNavigate, onAppoin
       title: "The Sovereign Temple Sunburst",
       concept: "CAMPAIGN III &bull; SACRED COIN & MANGO LEAF HARMONIES",
       description: "Honoring the historic jewelry styles of Kovils and Southern Dravidian lineages, the Temple Sunburst matches heavy, hand-carved mango leaves with auspicious Kasu coins. The centerpiece captures the fierce protection of the sun, accented by deep-saturated untreated Burmese rubies and highly polished yellow gold borders that resist modern dilutions.",
-      image: "/src/assets/images/gold_smelt.webp",
+      image: goldSmelt,
       traditionalWeight: "40 TO 85 GRAMS OF PURE 22K ALLOY",
       customizationOptions: "Custom coin carvings (deity or lotus engravings), variable pendant drop scales, high-polish or vintage patina finish.",
       highlightQuote: "“The sound of gold coins touching during the ceremony serves as the elemental heartbeat of a lifelong covenant.”",
@@ -109,32 +110,32 @@ export default function BridalExperiencePage({ onBookClick, onNavigate, onAppoin
   // 3. Gallery Images (Visuals showing details)
   const galleryImages = [
     {
-      url: "/src/assets/images/bridal.webp",
+      url: bridal,
       tag: "THE TRADITIONAL COVENANT",
       title: "Traditional Akurana 22k Tier Ensemble"
     },
     {
-      url: "/src/assets/images/wedding_bands.webp",
+      url: weddingBands,
       tag: "GEOMETRICAL FIRE",
       title: "The Antwerp Solid Claws detail"
     },
     {
-      url: "/src/assets/images/craftsmanship.webp",
+      url: craftsmanship,
       tag: "THE ATELIER SMITHY",
       title: "Master Goldsmith Drawing Hair Filaments"
     },
     {
-      url: "/src/assets/images/showroom.webp",
+      url: showroom,
       tag: "THE DESIGN CHAMBER",
       title: "Kandy Region Private Bridal Salon Suite"
     },
     {
-      url: "/src/assets/images/gold_smelt.webp",
+      url: goldSmelt,
       tag: "HEIRLOOM SPECS",
       title: "Heavy Bezel-Mounted Colombian Gemstones"
     },
     {
-      url: "/src/assets/images/hero.webp",
+      url: hero,
       tag: "THE ULTIMATE SHINE",
       title: "Assay Hallmarked Velvet Gold Polish"
     }
@@ -146,7 +147,7 @@ export default function BridalExperiencePage({ onBookClick, onNavigate, onAppoin
       id: "story-1",
       couple: "Anura & Dilhani",
       origin: "Akurana Town &bull; Celebrated June 2025",
-      photo: "/src/assets/images/bridal_portrait_1.webp",
+      photo: bridalPortrait1,
       narrative: "“We visited three mass-retail jewelers before entering New Kamal’s private studio. The difference was night and day. There was no sales pitch—only an absolute dedication to mapping my collarbones for the Traditional Seven Chains. The master goldsmith physically adjusted each loop to sit perfectly flush over my temple sari. When my grandmother weighed it in her hands, she wept at the purity of the color.”",
       piece: "Custom Seven-Chain Kandyan Assembly in 22k Gold (120 Sovereigns)"
     },
@@ -154,7 +155,7 @@ export default function BridalExperiencePage({ onBookClick, onNavigate, onAppoin
       id: "story-2",
       couple: "Dr. Rajiv & Priyantha",
       origin: "Colombo / Kandy Royal Assembly &bull; Celebrated Jan 2026",
-      photo: "/src/assets/images/bridal_portrait_2.webp",
+      photo: bridalPortrait2,
       narrative: "“Our diamond wedding necklace was custom-crafted from an Antwerp raw shipment. I sat in the Akurana showroom and watched the drafting of the white gold borders. They handled the stones under a high-powered lens so we could inspect each facet ourselves. Every guest remarked that the reflection under the ceremony lights was explosive. It is now our family’s crown heirloom.”",
       piece: "Antwerp Marquise Latticed Collar Necklace (24.5 Carats Total)"
     }
@@ -248,7 +249,7 @@ export default function BridalExperiencePage({ onBookClick, onNavigate, onAppoin
           <div className="lg:col-span-12 xl:col-span-6">
             <div className="relative aspect-[4/5] bg-[#080808] border border-white/[0.03] overflow-hidden group">
               <img
-                src="/src/assets/images/bridal.webp"
+                src={bridal}
                 alt="A magnificent heavy 22k gold traditional bridal necklace suite with nested layers"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover filter brightness-[0.5] contrast-[1.1] group-hover:scale-105 transition-transform duration-[4000ms] ease-[0.16, 1, 0.3, 1]"

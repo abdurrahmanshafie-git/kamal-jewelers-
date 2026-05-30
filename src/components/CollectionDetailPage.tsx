@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { ArrowUpRight, Compass, ShieldCheck, HelpCircle, Star } from 'lucide-react';
 import { MasterpieceItem } from '../types';
 import PageHeader from './PageHeader';
+import { bridal, gemstone, goldSmelt, hero, ring, weddingBands } from '../imageAssets';
 
 interface CollectionDetailPageProps {
   collectionId: string;
@@ -58,7 +59,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
       essay: 'Operating under rigorous historical criteria, each wedding assemblage represents a continuous multi-layered choreography. The traditional Kandyan Seven Chains are forged not as separate ornaments, but as a singular aesthetic landscape that aligns with the bride’s precise silhouette. Every link is calibrated to absorb the dynamic weight of the sacred wedding morning.',
       quote: '“To wear the seven traditional layers is to carry the physical, unbreakable rhythm of ancestors into a modern union.”',
       citation: 'NK SPECIFICATION ARCHIVE &bull; REF 01',
-      image: "/src/assets/images/bridal.webp",
+      image: bridal,
       inspiration: {
         title: "Kandyan Royal Regalia",
         text: "The geometry of our bridal chokers is inherited from the historic archives of the Hill Country. Each petal motif is individually drafted, resisting modern commercial shortcuts to preserve the authentic heavy look favored by provincial rulers since the late 18th century.",
@@ -77,7 +78,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
           desc: 'An imposing traditional centerpiece. Concentric gold filigree petals radiate in perfect symmetry, carrying a historical weight polished to a deep velvet shine.',
           metal: '22k Pure Yellow Gold',
           weight: '112.5 Grams Assay Gold',
-          image: "/src/assets/images/bridal.webp",
+          image: bridal,
           purity: '22k Pure Sri Lankan Assay Gold',
           specs: { metal: '22k Pure Yellow Gold', weight: '112.5 Grams Assay Gold', gems: 'Gold filigree work' }
         },
@@ -87,7 +88,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
           desc: 'A striking Colombian emerald hand-framed by a double-braided continuous yellow gold border, finished with classic hand-hammered textures.',
           metal: '22k Traditional Gold',
           weight: '6.2ct Emerald, 22g Gold',
-          image: "/src/assets/images/gold_smelt.webp",
+          image: goldSmelt,
           purity: '22k Traditional Gold / Certified Colombian Gem',
           specs: { metal: '22k Traditional Gold', weight: '6.2ct Emerald, 22g Gold', gems: 'Rare Colombian Gem' }
         }
@@ -102,7 +103,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
       essay: 'We reject the chaotic distribution of generic stones. Our diamonds represent the absolute maximum of geometric cuts—specifically Antwerp triple-excellent shapes selected for explosive fire. These brilliants are mounted in silent, minimal frameworks that expose the diamond to natural light, turning crystalline mathematics into intense fire.',
       quote: '“True luxury lies not in the size of the stone, but in the speed with which it translates low-source light into structural color.”',
       citation: 'GIA CERTIFIED ARCHIVE &bull; REF 02',
-      image: "/src/assets/images/ring.webp",
+      image: ring,
       inspiration: {
         title: "Antwerp Precision Principles",
         text: "The setting claws are sculpted individually out of raw platinum bullion. Rather than using pre-cast templates, we mount each stone under high-magnification lens structures, assuring lifelong retention and flawless table-facets alignment.",
@@ -121,7 +122,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
           desc: 'A rare royal-blue cushion-cut Sri Lankan sapphire flanked by brilliant-cut diamonds inside a custom-etched cold-forged platinum frame.',
           metal: 'Platinum 950 Imperial',
           weight: '8.5ct Sapphire, 1.4ct Dia',
-          image: '/src/assets/images/gemstone.webp',
+          image: gemstone,
           purity: 'Platinum 950 Imperial / GIA Certified',
           specs: { metal: 'Platinum 950', weight: '8.5ct Sapphire, 1.4ct Dia', gems: 'Unheated Sapphire' }
         },
@@ -131,7 +132,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
           desc: 'A structural white gold lattice holding pear and marquise cut diamonds, designed to mirror natural crown arrays under ceremonial lighting.',
           metal: '18k Imperial White Gold',
           weight: '44.8 Carats Total Diamond',
-          image: "/src/assets/images/hero.webp",
+          image: hero,
           purity: '18k Imperial White Gold / GIA Triple Excellent',
           specs: { metal: '18k Solid White Gold', weight: '44.8 Carats Total Diamond', gems: 'Intense Flawless diamonds' }
         }
@@ -146,7 +147,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
       essay: 'We believe gold carries its own language. Our 22k pure Sri Lankan gold is hammered, drawn down into hair-thin wire filaments, and coiled into traditional patterns inside our Akurana studio. This is a manual art requiring intense patience, preserving a forty-five-year legacy of uncompromised material weight.',
       quote: '“Memory is our finest tool. In reproducing ancient filigree, the hands remember what the digital machine can never feel.”',
       citation: 'AKURANA SMITHY STANDARD &bull; REF 03',
-      image: "/src/assets/images/hero.webp",
+      image: hero,
       inspiration: {
         title: "The Pure 916 Standard",
         text: "We reject the dilution of yellow gold with cheaper copper alloys. Every piece retains the deep, warm, almost velvet yellow weight that is the defining marker of timeless South Asian heirloom gold.",
@@ -165,7 +166,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
           desc: 'A breathtaking demonstration of traditional Galle filigree petal-shaping, built entirely with 916 assayed yellow gold.',
           metal: '22k Pure Yellow Gold',
           weight: '112.5 Grams Assay Gold',
-          image: "/src/assets/images/bridal.webp",
+          image: bridal,
           purity: '22k Pure Sri Lankan Assay Gold',
           specs: { metal: '22k Pure Yellow Gold', weight: '112.5 Grams Assay Gold', gems: 'Gold filigree work' }
         }
@@ -180,7 +181,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
       essay: 'We maintain direct channels to regional mine sites in Ratnapura. Focusing heavily on rare, unheated cornflower and royal-blue Ceylon sapphires, we select stones that hold natural volcanic saturated colors without artificial heat modifications.',
       quote: '“A gemstone is a geological diary. To artificially heat it is to erase the natural story written millions of years ago in the earth’s crust.”',
       citation: 'RATNAPURA MINE OUTPOST &bull; REF 04',
-      image: '/src/assets/images/gemstone.webp',
+      image: gemstone,
       inspiration: {
         title: "Ratnapura Saturated Hues",
         text: "Our experts select unheated gems representing only the top 1% of color saturation. Each raw crystal is cut with asymmetrical step-facets to enhance natural refraction without diminishing the original carat size.",
@@ -199,7 +200,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
           desc: 'A gorgeous cushion royal blue sapphire mounted on platinum, flanked by two highly refractive triangular diamonds.',
           metal: 'Platinum 950 Imperial',
           weight: '8.5ct Sapphire, 1.4ct Dia',
-          image: '/src/assets/images/gemstone.webp',
+          image: gemstone,
           purity: 'Platinum 950 Imperial / GIA Certified',
           specs: { metal: 'Platinum 950', weight: '8.5ct Sapphire, 1.4ct Dia', gems: 'Unheated Sapphire' }
         }
@@ -214,7 +215,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
       essay: 'A marriage band has no starting point and no termination. Inside our quiet Akurana workshop, each ring represents a single, continuous pour of liquid metal—platinum, yellow gold or white gold. Highly balanced, weighted, and designed to sit flush against the skin for decades.',
       quote: '“Simplicity is the most difficult achievement. Without decorative filigree to distract the eye, the finish of the metal must be flawless.”',
       citation: 'SINGLE POUR REGISTRY &bull; REF 05',
-      image: '/src/assets/images/wedding_bands.webp',
+      image: weddingBands,
       inspiration: {
         title: "The Circle of Solitude",
         text: "Each ring is forged from a unified metal billet. By avoiding structural solder seams, we produce bands that retain perfect circular balance, remaining resilient to the abrasive friction of daily life across decades.",
@@ -233,7 +234,7 @@ export default function CollectionDetailPage({ collectionId, onNavigate, onProdu
           desc: 'Thick, continuous-pour platinum bands featuring comfort-fit inner profiling and a hand-polished matte oyster skin finish.',
           metal: 'Platinum 950',
           weight: '18.4 Grams Solid Platinum',
-          image: "/src/assets/images/wedding_bands.webp",
+          image: weddingBands,
           purity: 'Platinum 950 Seamless Standard',
           specs: { metal: 'Platinum 950', weight: '18.4g Platinum', gems: 'None' }
         }

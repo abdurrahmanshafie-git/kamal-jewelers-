@@ -1,22 +1,23 @@
 import { motion } from 'motion/react';
 import { LayoutGrid, Camera, Eye } from 'lucide-react';
+import { bridal, craftsmanship, hero, showroom } from '../imageAssets';
 
 export default function ShowroomPreview() {
   const showroomImages = [
     {
-      url: "/src/assets/images/showroom.webp",
+      url: showroom,
       label: "I. THE BRIDAL CONSULTATION CHAMBER"
     },
     {
-      url: "/src/assets/images/craftsmanship.webp",
+      url: craftsmanship,
       label: "II. THE ATELIER WORKBENCH"
     },
     {
-      url: "/src/assets/images/hero.webp",
+      url: hero,
       label: "III. THE GOLD ARCHIVE CABINET"
     },
     {
-      url: "/src/assets/images/bridal.webp",
+      url: bridal,
       label: "IV. AUSPICIOUS PRESENTATION SUITE"
     }
   ];

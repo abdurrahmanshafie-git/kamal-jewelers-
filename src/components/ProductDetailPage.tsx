@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, Heart, ShieldCheck, Award, MessageCircle, Phone, Sparkles, ZoomIn, ZoomOut, Compass, FileText, Anchor } from 'lucide-react';
 import { MasterpieceItem } from '../types';
 import PageHeader from './PageHeader';
+import { bridal, craftsmanship, gemstone, goldSmelt, hero, ring, showroom, weddingBands } from '../imageAssets';
 
 interface ProductDetailPageProps {
   product: MasterpieceItem;
@@ -28,24 +29,24 @@ export default function ProductDetailPage({ product, onNavigate, onBookClick, on
   // Supplementary high-definition photo assets representing luxury magazine spreads
   const productSupplementaryImages: Record<string, string[]> = {
     'mast-1': [
-      '/src/assets/images/gemstone.webp', // Royal Blue Crystal
-      '/src/assets/images/ring.webp', // Diamond Facet Macro
-      '/src/assets/images/craftsmanship.webp' // Forge Drafting Blueprint
+      gemstone, // Royal Blue Crystal
+      ring, // Diamond Facet Macro
+      craftsmanship // Forge Drafting Blueprint
     ],
     'mast-2': [
-      '/src/assets/images/hero.webp', // Main Queen Lattice
-      '/src/assets/images/showroom.webp', // Premium Velvet Display Case
-      '/src/assets/images/wedding_bands.webp' // Royal Ring Set Detail
+      hero, // Main Queen Lattice
+      showroom, // Premium Velvet Display Case
+      weddingBands // Royal Ring Set Detail
     ],
     'mast-3': [
-      '/src/assets/images/bridal.webp', // Grand Traditional Choker
-      '/src/assets/images/craftsmanship.webp', // Artisan Hammer wirework Closeup
-      '/src/assets/images/gold_smelt.webp' // Heavy raw gold smelt focus
+      bridal, // Grand Traditional Choker
+      craftsmanship, // Artisan Hammer wirework Closeup
+      goldSmelt // Heavy raw gold smelt focus
     ],
     'mast-4': [
-      '/src/assets/images/gold_smelt.webp', // Big Solitaire Close
-      '/src/assets/images/hero.webp', // Gold filigree micro joints
-      '/src/assets/images/showroom.webp' // Studio fitting room view
+      goldSmelt, // Big Solitaire Close
+      hero, // Gold filigree micro joints
+      showroom // Studio fitting room view
     ]
   };
 
@@ -99,7 +100,7 @@ export default function ProductDetailPage({ product, onNavigate, onBookClick, on
 
   const currentSupplementary = productSupplementaryImages[product.id] || [
     product.image,
-    '/src/assets/images/ring.webp'
+    ring
   ];
 
   const currentChronicle = productChronicles[product.id] || {
@@ -120,7 +121,7 @@ export default function ProductDetailPage({ product, onNavigate, onBookClick, on
       category: 'Exclusive',
       price: 'LKR 4,500,000',
       rating: 5.0,
-      image: '/src/assets/images/gemstone.webp',
+      image: gemstone,
       purity: 'Platinum 950 Imperial Spec',
       description: 'Centering an extraordinary royal blue cushion-cut Ceylon sapphire from the depths of Ratnapura, flanked by rare triangular white brilliant-cut diamonds inside an intricately micro-engraved absolute platinum tier.',
       specs: {
@@ -135,7 +136,7 @@ export default function ProductDetailPage({ product, onNavigate, onBookClick, on
       category: 'Diamond',
       price: 'LKR 18,000,000',
       rating: 5.0,
-      image: '/src/assets/images/hero.webp',
+      image: hero,
       purity: '18k Imperial White Gold / GIA Cert',
       description: 'Inspired by historical crowns of the royal Kandyan dynasty. A breathtaking lattice of 142 marquise and pear-cut diamonds creating a cascading water-drop refraction framework.',
       specs: {
@@ -150,7 +151,7 @@ export default function ProductDetailPage({ product, onNavigate, onBookClick, on
       category: 'Classic Gold',
       price: 'LKR 1,800,000',
       rating: 4.9,
-      image: '/src/assets/images/bridal.webp',
+      image: bridal,
       purity: '22k Pure Sri Lankan gold',
       description: 'A masterpiece created over 120 painstaking hours by a senior master craftsman. Heavy traditional filigree petals radiating in perfect concentric geometry, honoring historic designs.',
       specs: {
@@ -165,7 +166,7 @@ export default function ProductDetailPage({ product, onNavigate, onBookClick, on
       category: 'Bridal',
       price: 'LKR 3,820,000',
       rating: 5.0,
-      image: '/src/assets/images/gold_smelt.webp',
+      image: goldSmelt,
       purity: '22k Gold / Certified Gem',
       description: 'An imposing raw glowing Colombian emerald, bezel-set into a heavy handcrafted traditional double loop gold structure with subtle vintage hand-beating marks.',
       specs: {

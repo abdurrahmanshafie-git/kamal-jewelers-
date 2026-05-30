@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { MapPin, Clock, Phone, ExternalLink, MessageCircle } from 'lucide-react';
+import { showroom } from '../imageAssets';
 
 export default function ShowroomExperience() {
   const showroomData = {
@@ -23,7 +24,7 @@ export default function ShowroomExperience() {
           <div className="lg:col-span-7">
             <div className="relative aspect-[4/5] bg-[#0a0a0a] border border-white/5 overflow-hidden group">
               <img
-                src="/src/assets/images/showroom.webp"
+                src={showroom}
                 alt="New Kamal Jewellers showroom interior with boutique showcases"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover filter brightness-[0.6] contrast-[1.05] transition-transform duration-[3000ms] group-hover:scale-102"

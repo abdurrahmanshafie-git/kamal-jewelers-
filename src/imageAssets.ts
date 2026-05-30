@@ -1,0 +1,15 @@
+export { default as bridal } from './assets/images/bridal.webp';
+export { default as bridalPortrait1 } from './assets/images/bridal_portrait_1.webp';
+export { default as bridalPortrait2 } from './assets/images/bridal_portrait_2.webp';
+export { default as craftsmanship } from './assets/images/craftsmanship.webp';
+export { default as gemstone } from './assets/images/gemstone.webp';
+export { default as goldSmelt } from './assets/images/gold_smelt.webp';
+export { default as hero } from './assets/images/hero.webp';
+export { default as jawrahLogo } from './assets/images/jawrah-logo.webp';
+export { default as logo } from './assets/images/logo.webp';
+export { default as ring } from './assets/images/ring.webp';
+export { default as showroom } from './assets/images/showroom.webp';
+export { default as showroomLounge } from './assets/images/showroom_lounge.webp';
+export { default as showroomDisplay } from './assets/images/showroom_display.webp';
+export { default as watermark } from './assets/images/watermark.webp';
+export { default as weddingBands } from './assets/images/wedding_bands.webp';

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BookOpen, Sparkles, Clock, ArrowRight, Heart, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import PageHeader from './PageHeader';
+import { bridal, gemstone, hero } from '../imageAssets';
 
 interface JournalPageProps {
   onNavigate: (page: string) => void;
@@ -18,7 +19,7 @@ export default function JournalPage({ onNavigate }: JournalPageProps) {
       readTime: "6 Min Read",
       date: "May 25, 2026",
       excerpt: "Deep within the rich soils of Ratnapura lies a geological wonder that has captivated kings and queens for centuries. Discover why the Ceylon Sapphire holds unrivaled prestige in the global high jewelry courts.",
-      image: "/src/assets/images/gemstone.webp"
+      image: gemstone
     },
     {
       id: "jour-2",
@@ -27,7 +28,7 @@ export default function JournalPage({ onNavigate }: JournalPageProps) {
       readTime: "8 Min Read",
       date: "May 18, 2026",
       excerpt: "From the traditional forehead 'Nalal Pataya' to the cascades of the 'Peti Malaya'. Unraveling the divine seven layers of Kandyan bridal wear that define elegance and lineage.",
-      image: "/src/assets/images/bridal.webp"
+      image: bridal
     },
     {
       id: "jour-3",
@@ -36,7 +37,7 @@ export default function JournalPage({ onNavigate }: JournalPageProps) {
       readTime: "5 Min Read",
       date: "May 12, 2026",
       excerpt: "Beyond the standard four Cs. Learn how our Antwerp diamond carvers analyze fire, light scintillation, and structural symmetry to select the chosen few stones for our sovereign collections.",
-      image: "/src/assets/images/hero.webp"
+      image: hero
     }
   ];
 
