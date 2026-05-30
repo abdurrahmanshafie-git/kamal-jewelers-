@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@200;300;400;500;600&family=JetBrains+Mono:wght@200;300;400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --gold: #C5A059;
+  --champagne: #F5E6CD;
+  --ivory: #FAF8F4;
+  --black: #030303;
+  --dark-gray: #0A0A0A;
+  --glass: rgba(255, 255, 255, 0.02);
+  --luxury-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@theme {
+  --font-serif: "Cormorant Garamond", "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-gold-50: #fbfbf9;
+  --color-gold-100: #faf7ef;
+  --color-gold-200: #F5E6CD; /* Champagne elegant */
+  --color-gold-300: #e2cca1;
+  --color-gold-500: #C5A059; /* Gold standard */
+  --color-gold-600: #b48e4b;
+  --color-gold-700: #937135;
+  --color-luxury-black: #030303;
+  --color-luxury-gray: #0A0A0A;
+
+  --tracking-luxury: 0.15em;
+  --tracking-editorial: 0.05em;
+  --tracking-mono-luxury: 0.45em;
+}
+
+/* Fallback classes in case Tailwind fails or for direct theme matches */
+.serif {
+  font-family: 'Cormorant Garamond', serif;
+}
+.gold-text {
+  color: var(--gold);
+}
+.gold-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #F3E5AB 50%, #C5A059 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.border-gold {
+  border: 1px solid rgba(197, 160, 89, 0.3);
+}
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.hero-mask {
+  background: radial-gradient(circle at 70% 30%, rgba(197, 160, 89, 0.15) 0%, transparent 70%);
+}
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+.shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #C5A059 0%, #F3E5AB 50%, #C5A059 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, #C5A059 0%, #F3E5AB 50%, #C5A059 100%);
+  }
+  .gold-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .gold-shimmer::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -100%;
+    width: 50%;
+    height: 200%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+    transform: rotate(25deg);
+    transition: all 1.2s var(--luxury-ease);
+  }
+  .gold-shimmer:hover::after {
+    left: 150%;
+  }
+
+  .editorial-max-width {
+    max-width: 65ch;
+  }
+
+  .reveal-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s var(--luxury-ease);
+  }
+
+  .reveal-animation.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .luxury-transition {
+    transition: all 0.6s var(--luxury-ease);
+  }
+}
+
+/* Custom scrollbar for royal aesthetic */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(197, 160, 89, 0.3);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(197, 160, 89, 0.6);
+}
+
+/* Base custom font selection */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-luxury-black);
+  color: var(--ivory);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-serif-luxury {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+p {
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
